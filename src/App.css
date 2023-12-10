@@ -11,19 +11,19 @@
   background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
  background-blend-mode: multiply,multiply;
   border: 3px solid rgb(85, 85, 85);
-  border-radius: 20px;
+  border-radius: 2rem;
   display: flex;
-  width: 50%;
+  width: 50vw;
   height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .wallet {
-  width: 25%;
+  width: 20vw;
   background-color: rgb(239,172,22);
   height: 100vh;
   color: rgb(62, 13, 13);
@@ -32,19 +32,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 .screen {
   background-color: black;
-  border-radius: 10px;
+  border-radius: 1rem;
   color: white;
   height: 70%;
   width: 85%;
   margin-top: 1rem;
   padding-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 50px;
+  font-size: 3.5rem;
   font-family: 'VT323';
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -52,7 +56,7 @@
   display: flex;
   width: 70%;
   height: 40%;
-  margin-top: 10px;
+  margin-top: 1.25rem;
   text-align: center;
   justify-content: center;
   background: rgb(239,172,22);
@@ -77,12 +81,10 @@
   padding-bottom: 1rem;;
 }
 
-
-
 .coin-slot {
   background-color: black;
-  width: 5px;
-  height: 50px;
+  width: 0.35rem;
+  height: 3.25rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,31 +100,31 @@
 
 .coin-slot-shape {
   position: relative;
-  margin-top: .25rem;
+  margin-top: 0.75rem;
 }
 .coin .circle {
   position: absolute;
   background-color:orange;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
-  left: -27.5px;
-  top: -3.50px;
+  left: -1.75rem;
+  top: -0.25rem;
 }
 
 .bill-slot {
   background-color: black;
-  width: 140px;
-  height: 5px;
+  width: 10rem;
+  height: 0.35rem;
   cursor: pointer;
 }
 
 .card-tap-square {
   background-color: black;
-  width: 100px;
-  height: 100px;
-  border-radius: 16px;
-  border: 1px solid black;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 1.25rem;
+  border: 0.25rem solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,14 +132,15 @@
 
 .card-slot {
   background-color: black;
-  width: 100px;
-  height: 5px;
+  width: 7rem;
+  height: 0.35rem;
 }
 
 .receipt-slot {
   background-color: black;
-  width: 75px;
-  height: 5px;
+  width: 12rem;
+  height: 0.35rem;
+  margin-top: 1rem;
 }
 
 .coin-change-bucket {
@@ -152,9 +155,9 @@
   flex-direction: row;
   width: 70%;
   height: 40%;
-  margin-top: 10px;
+  margin-top: 1rem;
   background: linear-gradient(90deg, rgba(239,172,22,1) 0%, rgba(254,240,9,1) 100%);
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 .change-receipt .receipt {
@@ -179,25 +182,26 @@
   align-items: center;
   text-align: center;
   margin: auto;
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 .wallet img {
   cursor: pointer;
 }
 
-
-
 .wallet-dollar {
   column-count: 3;
+  column-gap: 1px;
 }
 
 .items {
   background-color: rgb(239,172,22);
-  overflow-x: scroll;
+  overflow-x: none;
+  overflow-y: scroll;
   justify-content: center;
   text-align: center;
   align-items: center;
+  width: 10vw;
 }
 
 .items-title {
@@ -244,5 +248,45 @@
 .text {
   color: rgb(113, 113, 113);
   font-weight: 500;
-  -webkit-text-stroke: 1px rgb(84, 83, 83);
+  -webkit-text-stroke: 0.075rem rgb(84, 83, 83);
+}
+
+@media (max-width: 991px) {
+  .screen {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 0.75rem;
+  }
+  .bill-slot {
+    width: 4rem;
+  }
+  .card-slot {
+    width: 4rem;
+  }
+  .receipt-slot {
+    width: 5rem;
+  }
+  .card-tap-square {
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  .nfc-icon {
+    width: 100%;
+  }
+  .wallet-dollar {
+    column-count: 1;
+  }
+
+  .wallet-title {
+    font-size: 2rem;
+  }
+  .wallet-dollar .dollar-name, .wallet-dollar .dollar-amount {
+    display: none;
+    visibility: hidden;
+  }
+  .items {
+    width: 20vw;
+  }
 }

@@ -215,7 +215,12 @@ const App = () => {
             <div className="card-tap">
                 <div className="text">TAP YOUR CARD HERE</div>
                 <a href="https://venmo.com/u/boinkie">
-                  <div className="card-tap-square">< NfcIcon color='primary' className="nfc-icon" sx={{ fontSize: 70 }} /></div>
+                  <div className="card-tap-square">< NfcIcon color='primary' className="nfc-icon" sx= {{
+                    fontSize: "70px",
+                    '@media (max-width: 991px)': {
+                      fontSize: "30px"
+                    }
+                  }}/></div>
                 </a>
             </div>
             <div className="card-insert">
