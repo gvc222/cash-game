@@ -1,0 +1,248 @@
+.app {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(216, 216, 216);
+  background-image: url('https://s3.ap-southeast-1.amazonaws.com/we-xpats.com/uploads/article/konbini%20pillar%20(2).jpg');
+  width: 100vw;
+  height: 100vh;
+}
+
+.machine {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+  border: 3px solid rgb(85, 85, 85);
+  border-radius: 20px;
+  display: flex;
+  width: 50%;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.wallet {
+  width: 25%;
+  background-color: rgb(239,172,22);
+  height: 100vh;
+  color: rgb(62, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.screen {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  height: 70%;
+  width: 85%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 50px;
+  font-family: 'VT323';
+  text-align: center;
+}
+
+.payment {
+  display: flex;
+  width: 70%;
+  height: 40%;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  background: rgb(239,172,22);
+  background: linear-gradient(90deg, rgba(239,172,22,1) 0%, rgba(254,240,9,1) 100%);
+  border-radius: 1rem;
+}
+
+.card-pay {
+  width: 50%;
+}
+
+.cash-insert {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -2rem;
+}
+
+.bills {
+  padding-bottom: 1rem;;
+}
+
+
+
+.coin-slot {
+  background-color: black;
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.coin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coin-slot-shape {
+  position: relative;
+  margin-top: .25rem;
+}
+.coin .circle {
+  position: absolute;
+  background-color:orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: -27.5px;
+  top: -3.50px;
+}
+
+.bill-slot {
+  background-color: black;
+  width: 140px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.card-tap-square {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-slot {
+  background-color: black;
+  width: 100px;
+  height: 5px;
+}
+
+.receipt-slot {
+  background-color: black;
+  width: 75px;
+  height: 5px;
+}
+
+.coin-change-bucket {
+  background-color: rgba(239,172,22,1);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.change-receipt {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 40%;
+  margin-top: 10px;
+  background: linear-gradient(90deg, rgba(239,172,22,1) 0%, rgba(254,240,9,1) 100%);
+  border-radius: 20px;
+}
+
+.change-receipt .receipt {
+  width: 45%;
+}
+
+.change-receipt .coins {
+  width: 15%;
+}
+
+.change-receipt .reset {
+  width: 10%;
+}
+
+.nfc-icon {
+  opacity: 0.75;
+}
+
+.card-tap, .card-insert, .cash-insert, .receipt, .change, .reset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.wallet img {
+  cursor: pointer;
+}
+
+
+
+.wallet-dollar {
+  column-count: 3;
+}
+
+.items {
+  background-color: rgb(239,172,22);
+  overflow-x: scroll;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.items-title {
+  font-size: 1.5rem;
+}
+
+.product-title {
+  margin-top: 2rem;
+}
+.items img {
+  cursor: pointer;
+}
+
+.reset {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.reset-button {
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: rgba(128, 128, 128, 0.75)
+}
+
+.reset-button:active {
+  background-color:rgb(85, 85, 85);
+}
+
+.notification {
+  margin-bottom: 2rem;
+}
+
+.wallet-title {
+  font-size: 3rem;
+}
+
+.text {
+  color: rgb(113, 113, 113);
+  font-weight: 500;
+  -webkit-text-stroke: 1px rgb(84, 83, 83);
+}
